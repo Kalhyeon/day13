@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>간단 수평 메뉴바</title>
+  <style>
+    * {padding: 0; margin: 0; box-sizing: border-box;} /* * : 전체 선택자
+                                                       box-sizing: border-box; 은 요소의 크기 계산에
+                                                       컨텐츠 영역뿐만 아니라 border 와 padding 까지
+                                                       포함하여 계산한다. */
+    div {border: 1px solid green; padding: 20px; width: 300px;
+        display: flex; justify-content: center; align-items: center; margin: 0 auto;}
+    ul {list-style: none; display: flex; text-align: center;} /* li 의 점 등을 없앤다. */
+    li {width: 150px; height: 30px; background-color: green;
+        border: 1px solid yellowgreen; margin: 0; margin-left: 10px; color: white; display: flex;
+        justify-content: center; align-items: center; display: inline-block;}
+    li:hover {background-color: white; color: green;
+              border: 3px solid yellow; cursor: pointer;} /* cursor: pointer; 는 마우스 커서를 영역에 올렸을 때
+                                                               손가락 모양으로 바꾼다. */
+  </style>
+</head>
+<body>
+  <div>메뉴</div>
+  <ul>
+    <li>회사 소개</li>
+    <li>쇼핑몰</li>
+    <li>게시판</li>
+    <li>회원 가입</li>
+  </ul>
+</body>
+</html>

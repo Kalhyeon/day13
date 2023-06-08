@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> <!-- 전 세계의 대부분의 문자를 지원한다. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex</title>
+  <style>
+    /* 선택자 */
+    span {background-color: yellow; display: block;}
+    div {background-color: orange; display: inline;}
+    #target:hover {display: none;} /* 대한민국 영역 위에 마우스 포인트를 올리면 영역이 사라진다. */
+  </style>
+</head>
+<body>
+  <h1>display 속성</h1>
+  <ul>
+    <li>inline : 내용만큼 width 를 차지한다.</li>
+    <li>block : 한 줄을 차지한다.</li>
+    <li>none : 없앤다</li>
+    <li>flex</li>
+  </ul>
+  <hr>
+  <span>우리나라</span>
+  <div>좋은 나라</div>
+  <span id="target">대한민국</span>
+</body>
+</html>

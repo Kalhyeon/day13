@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수습 국원 모집</title>
+  <style>
+    body {
+      background-color: lightgray;
+      display: flex; /* 내부의 flex items 은 가로 방향으로 배치되며, 자동으로 크기가 조정된다. */
+      justify-content: center; /* 가로 방향 가운데 정렬, 여분의 공간을 분배 */
+    }
+    #page {
+      width: 500px;
+      padding: 20px;
+      border: 1px solid gray;
+      background-color: white;
+      border-radius: 20px;
+    }
+    table, td, th {
+      border: 1px solid lightgray;
+      border-collapse: collapse;
+    }
+    th {
+      padding: 10px 20px; /* th tag 의 상/하, 좌/우 의 padding 을 각각 10px, 20px 로 지정 */
+    }
+    h1 {
+      text-align: center; /* h1 tag 의 문장을 수평 가운데 정렬 */
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+  <h1>수습 국원 지원 양식</h1>
+    <table>
+      <colgroup>
+        <col width="150px"> <!-- 세 개의 열의 폭을 각각 150px, 150px, 200px 로 조정한다. -->
+        <col width="150px">
+        <col width="200px">
+      </colgroup>
+      <tbody>
+        <tr>
+          <th rowspan="3">개인정보</th> <!-- 해당 th 셀이 세 개의 연속된 행을 병합 -->
+          <th>이름</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>학과/학번</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>연락처</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>지원 분야</th>
+          <td colspan="2"></td> <!-- table 의 행에서 2 개의 열을 병합  -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

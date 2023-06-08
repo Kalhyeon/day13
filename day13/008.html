@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메뉴 - inline block</title>
+  <style>
+    ul {list-style: none; padding: 0;}
+    li {background-color: blueviolet; color: white;
+        width: 150px; display: inline-block; height: 40px;
+        text-align: center; line-height: 40px; border-radius: 10px;}
+         /* line-height 를 height 와 똑같이 값을 만들어 수직 가운데 정렬한다.*/
+         /* inline-block 은 요소를 수평 정렬하고 block 형식으로 바꾼다. 
+            이의 단점은 객체 사이에 margin 을 넣지 않았는데도 여백이 생긴다. */
+    li:hover {cursor: pointer; background-color: dodgerblue;}
+  </style>
+</head>
+<body>
+  <ul>
+    <li>AAA</li>
+    <li>BBB</li>
+    <li>CCC</li>
+  </ul>
+</body>
+</html>

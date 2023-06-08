@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title> <!-- 표 -->
+  <style>
+    /* 
+      A, B : A와 B
+      A B : A 안에 있는 B (하위 선택자)
+    */
+    table, td {border: 1px solid rgb(0, 0, 0); border-collapse: collapse;} /* border-collapse: collapse; 는
+                                                                                두 테두리를 합친다. */
+                                                    /* 쉼표로 나열하여 앞의 선택자가 부모, 뒤의 선택자가 자식으로써
+                                                    하위 선택자로 지정되어 둘 모두에게 style 이 적용된다. */
+    table {
+      width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 2행 3열의 표 -->
+  <table>
+    <tr>
+      <td>1 1</td>
+      <td>1 2</td>
+      <td>1 3</td>
+    </tr>
+    <tr>
+      <td>2 1</td>
+      <td>2 2</td>
+      <td>2 3</td>
+    </tr>
+  </table>
+</body>
+</html>

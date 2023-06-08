@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {width: 800px; height: 150px; border: 1px solid red;}
+    .child {width: 100px; height: 100px; border: 1px solid green;}
+    #between {
+      display: flex; /* 수평 정렬로 변환 (원래 div 는 수직 정렬) */
+      justify-content: space-between; /* 객체가 3개라면 첫번째와 세번째를 양쪽 끝으로 배치하고 남은 공간을 나눈다. */
+    }
+    #around {
+      display: flex;
+      justify-content: space-around; /* 객체가 3개라면 3개의 객체가 공간을 적절히 나눈다. */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent" id="between">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+  </div>
+  <div class="parent" id="around">
+    <div class="child">A</div>
+    <div class="child">B</div>
+    <div class="child">C</div>
+  </div>
+</body>
+</html>
